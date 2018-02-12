@@ -1,14 +1,4 @@
----
-title:  require.js和r.js使用小结
-author: 黎文欣
-tags: 工具
-categories:
-  - requirejs
-blogexcerpt: 文字摘要
-date: 2017-04-25 21:34:12
-thumbnail:
----
-这是一个基于require.js和r.js实现图片异步加载模块和合并打包js的测试项目。一开始会先给大家介绍一下require.js的简单用法，其它再对拿almond对比来实现r.js打包合并js文件。
+>这是一个基于require.js和r.js实现图片异步加载模块和合并打包js的测试项目。一开始会先给大家介绍一下require.js的简单用法，其它再对拿almond对比来实现r.js打包合并js文件。
 
 - 最早的时候，所有Javascript代码都写在一个文件里面，只要加载这一个文件就够了。后来，代码越来越多，一个文件不够了，必须分成多个文件，依次加载。使用require.js可以实现js文件的异步加载，避免网页失去响应；其次是管理模块之间的依赖性，便于代码的编写和维护。
 
