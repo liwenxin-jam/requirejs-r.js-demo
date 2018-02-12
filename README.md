@@ -20,7 +20,6 @@
 - 模块的加载行为可以进行自定义。require.config()就写在主模块（main.js）的头部。参数就是一个对象，这个对象的paths属性指定各个模块的加载路径。路径默认与main.js在同一个目录（js子目录。如果这些模块在其他目录，比如js/lib目录，则有两种写法。一种是逐一指定路径，例如"jquery": "lib/jquery.min",直接改变基目录（baseUrl）;某个模块在另一台主机上，也可以直接指定它的网址;如果加载多个模块，就会发出多次HTTP请求，会影响网页的加载速度。因此，require.js提供了一个优化工具，当模块部署完毕以后，可以用这个工具将多个模块合并在一个文件中，减少HTTP请求数。比如jQuery）符合AMD规范，更多的库并不符合。underscore和backbone这两个库，都没有采用AMD规范编写。如果要加载它们的话，必须先定义它们的特征。
 ```js
 //main.js
-// main.js
 console.log("加载main.js成功！");
 
 require.config({
@@ -122,7 +121,7 @@ define(['myLib', 'text!../../review.txt'], function(myLib, review){
 });
 ```
 
-- r.js打包，下面将会有两种情况的打包，前者是没有引入almond的情况下，后者是引入almond的情况。
+>r.js打包，下面将会有两种情况的打包，前者是没有引入almond的情况下，后者是引入almond的情况。
 
 ```html
 <!DOCTYPE html>
